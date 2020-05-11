@@ -1,5 +1,6 @@
 
-# Rest API 기반 결제시스템
+# REST-API Study #1 
+## Rest API 기반 결제시스템 
 
 
 결제, 결제취소 요청을 받아서 string 데이터로 카드사와 통신하는 서비스를 구현한다.   
