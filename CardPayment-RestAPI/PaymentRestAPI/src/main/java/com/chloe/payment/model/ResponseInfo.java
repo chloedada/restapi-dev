@@ -25,7 +25,7 @@ public class ResponseInfo {
 	 * 결제요청(request API) 에 대한 Response
 	 * Response 정보 : 
 	 * - Mandatory : 관리번호
-	 * - Optional  : 결제금액, 할부개월, 결제요청시간, 상호명(KakaoPay), 응답코드
+	 * - Optional  : 결제금액, 할부개월, 결제요청시간, 상호명(ChloePay), 응답코드
 	 */
 	public JSONObject processingPaymentResponse(PaymentInfo paymentInfo) throws JSONException {
 		JSONObject response = new JSONObject();
@@ -37,7 +37,7 @@ public class ResponseInfo {
 			response.put("paymentAmount", paymentInfo.getPaymentAmount());
 			response.put("installment", paymentInfo.getInstallment());
 			response.put("date", responseCurTime);
-			response.put("store", "KakaoPay");
+			response.put("store", "ChloePay");
 			response.put("reportCode", Code.S001);
 		} catch (JSONException e) {
 			e.printStackTrace();
